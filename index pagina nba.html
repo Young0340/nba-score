@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcador NBA - 03 de Marzo, 2025</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #ff0000; /* Cambiado a rojo */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header img {
+            height: 40px;
+        }
+        .nav-tabs {
+            background-color: #e0e0e0;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .nav-tabs button {
+            background: none;
+            border: none;
+            padding: 5px 15px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #333;
+        }
+        .nav-tabs button.active {
+            background-color: #ff0000; /* Cambiado a rojo */
+            color: white;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .game-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .game-card {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .game-card .teams {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .game-card .team {
+            text-align: center;
+            flex: 1;
+        }
+        .game-card .team img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+        .game-card .team h3 {
+            margin: 5px 0 0;
+            font-size: 16px;
+            color: #333;
+        }
+        .game-card .score {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff0000; /* Cambiado a rojo */
+            text-align: center;
+        }
+        .game-card .status {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+        .game-card .status.live {
+            color: #ff0000; /* Cambiado a rojo */
+        }
+        .game-card .status.final {
+            color: #008000;
+        }
+        .leaders {
+            margin-top: 20px;
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        .leaders h2 {
+            font-size: 18px;
+            color: #ff0000; /* Cambiado a rojo */
+            margin-bottom: 10px;
+        }
+        .leader {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .leader img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .leader .name {
+            font-size: 14px;
+            color: #333;
+        }
+        .leader .stats {
+            font-size: 14px;
+            color: #666;
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://via.placeholder.com/150.png?text=NBA" alt="NBA Logo">
+        <div>
+            <a href="#" style="color: white; text-decoration: none;">Watch</a> |
+            <a href="#" style="color: white; text-decoration: none;">Fantasy</a> |
+            <a href="#" style="color: white; text-decoration: none;">Betting</a>
+        </div>
+    </div>
+
+    <div class="nav-tabs">
+        <button class="active">Today</button>
+        <button>Feb 27</button>
+        <button>Mar 1</button>
+        <button>Expanded</button>
+        <button>Compact</button>
+    </div>
+
+    <div class="container">
+        <div class="game-section">
+            <!-- Juego 1: Raptors vs Bulls -->
+            <div class="game-card">
+                <div class="teams">
+                    <div class="team">
+                        <img src="https://via.placeholder.com/40.png?text=TOR" alt="Raptors">
+                        <h3>Raptors</h3>
+                    </div>
+                    <div class="score">18-41</div>
+                    <div class="team">
+                        <img src="https://via.placeholder.com/40.png?text=CHI" alt="Bulls">
+                        <h3>Bulls</h3>
+                    </div>
+                </div>
+                <div class="status final">Final</div>
+                <p>United Center, Chicago, IL</p>
+                <div class="leaders">
+                    <h2>Scoring Leaders</h2>
+                    <div class="leader">
+                        <img src="https://via.placeholder.com/30.png?text=Player" alt="Player">
+                        <span class="name">S. Barnes (TOR)</span>
+                        <span class="stats">24 PTS, 8 REB, 6 AST</span>
+                    </div>
+                    <div class="leader">
+                        <img src="https://via.placeholder.com/30.png?text=Player" alt="Player">
+                        <span class="name">C. White (CHI)</span>
+                        <span class="stats">24 PTS, 3 REB, 3 AST</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Juego 2: Pelicans vs Suns -->
+            <div class="game-card">
+                <div class="teams">
+                    <div class="team">
+                        <img src="https://via.placeholder.com/40.png?text=NOP" alt="Pelicans">
+                        <h3>Pelicans</h3>
+                    </div>
+                    <div class="score">16-43</div>
+                    <div class="team">
+                        <img src="https://via.placeholder.com/40.png?text=PHX" alt="Suns">
+                        <h3>Suns</h3>
+                    </div>
+                </div>
+                <div class="status final">Final</div>
+                <p>PHX Arena, Phoenix, AZ</p>
+                <div class="leaders">
+                    <h2>Scoring Leaders</h2>
+                    <div class="leader">
+                        <img src="https://via.placeholder.com/30.png?text=Player" alt="Player">
+                        <span class="name">Y. Missi (NOP)</span>
+                        <span class="stats">22 PTS, 4 REB, 1 AST</span>
+                    </div>
+                    <div class="leader">
+                        <img src="https://via.placeholder.com/30.png?text=Player" alt="Player">
+                        <span class="name">B. Bol (PHX)</span>
+                        <span class="stats">25 PTS, 2 REB, 2 AST</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Juego 3: Timberwolves vs Jazz -->
+            <div class="game-card">
+                <div class="teams">
+                    <div class="team">
+                        <img src="https://via.placeholder.com/40.png?text=MIN" alt="Timberwolves">
+                        <h3>Timberwolves</h3>
+                    </div>
+                    <div class="score">32-28</div>
+                    <div class="team">
+                        <img src="https://via.placeholder.com/40.png?text=UTA" alt="Jazz">
+                        <h3>Jazz</h3>
+                    </div>
+                </div>
+                <div class="status live">Halftime</div>
+                <p>Delta Center, Salt Lake City, UT</p>
+                <div class="leaders">
+                    <h2>Scoring Leaders</h2>
+                    <div class="leader">
+                        <img src="https://via.placeholder.com/30.png?text=Player" alt="Player">
+                        <span class="name">N. Reid (MIN)</span>
+                        <span class="stats">16 PTS, 6 REB, 4 AST</span>
+                    </div>
+                    <div class="leader">
+                        <img src="https://via.placeholder.com/30.png?text=Player" alt="Player">
+                        <span class="name">J. Collins (UTA)</span>
+                        <span class="stats">18 PTS, 6 REB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Juego 4: Clippers vs Lakers -->
+            <div class="game-card">
+                <div class="teams">
+                    <div class="team">
+                        <img src="https://via.placeholder.com/40.png?text=LAC" alt="Clippers">
+                        <h3>Clippers</h3>
+                    </div>
+                    <div class="score">32-26</div>
+                    <div class="team">
+                        <img src="https://via.placeholder.com/40.png?text=LAL" alt="Lakers">
+                        <h3>Lakers</h3>
+                    </div>
+                </div>
+                <div class="status live">End 1st</div>
+                <p>Crypto.com Arena, Los Angeles, CA</p>
+                <div class="leaders">
+                    <h2>Scoring Leaders</h2>
+                    <!-- Aquí puedes agregar líderes si los tienes -->
+                </div>
+            </div>
+
+            <!-- Juego 5: Nuggets vs Pistons -->
+            <div class="game-card">
+                <div class="teams">
+                    <div class="team">
+                        <img src="https://via.placeholder.com/40.png?text=DEN" alt="Nuggets">
+                        <h3>Nuggets</h3>
+                    </div>
+                    <div class="score">39-21</div>
+                    <div class="team">
+                        <img src="https://via.placeholder.com/40.png?text=DET" alt="Pistons">
+                        <h3>Pistons</h3>
+                    </div>
+                </div>
+                <div class="status final">Final</div>
+                <p>Little Caesars Arena, Detroit, MI</p>
+                <div class="leaders">
+                    <h2>Players of the Game</h2>
+                    <!-- Aquí puedes agregar jugadores destacados si los tienes -->
+                </div>
+            </div>
+
+            <!-- Juego 6: Cavaliers vs Celtics -->
+            <div class="game-card">
+                <div class="teams">
+                    <div class="team">
+                        <img src="https://via.placeholder.com/40.png?text=CLE" alt="Cavaliers">
+                        <h3>Cavaliers</h3>
+                    </div>
+                    <div class="score">49-18</div>
+                    <div class="team">
+                        <img src="https://via.placeholder.com/40.png?text=BOS" alt="Celtics">
+                        <h3>Celtics</h3>
+                    </div>
+                </div>
+                <div class="status final">Final</div>
+                <p>TD Garden, Boston, MA</p>
+                <div class="leaders">
+                    <h2>Players of the Game</h2>
+                    <!-- Aquí puedes agregar jugadores destacados si los tienes -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
